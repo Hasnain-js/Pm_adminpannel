@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=chrome">
     <title>PM-Admin Template</title>
     <meta name="description" content="Pakistan Marketiing House Hrovide Home For Every One">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,6 +39,10 @@
     <!-- jvectormap CSS
 		============================================ -->
     <link rel="stylesheet" href="css/jvectormap/jquery-jvectormap-2.0.3.css">
+    <!-- dialog CSS
+		============================================ -->
+        <link rel="stylesheet" href="css/dialog/sweetalert2.min.css">
+        <link rel="stylesheet" href="css/dialog/dialog.css">
     <!-- notika icon CSS
 		============================================ -->
     <link rel="stylesheet" href="css/notika-custom-icon.css">
@@ -48,15 +52,18 @@
     <!-- wave CSS
 		============================================ -->
     <link rel="stylesheet" href="css/wave/waves.min.css">
-    <!-- style CSS
-		============================================ -->
-    <link rel="stylesheet" href="style.css">
+    <!-- notification CSS
+    		============================================ -->
+    <link rel="stylesheet" href="css/notification/notification.css">
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- style CSS
+		============================================ -->
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -313,31 +320,30 @@
                     <nav id="dropdown">
                         <ul class="mobile-menu-nav">
                             <li>
-                              <a data-toggle="collapse" data-target="#Charts" href="index.php">Home</a>
+                              <a data-toggle="collapse" data-target="#project" href="index.php">Home</a>
                             </li>
-                            <li><a data-toggle="collapse" data-target="#demoevent" href="#">Email</a>
+                            <li><a data-toggle="collapse" data-target="#demoevent" href="#">Contact</a>
                                 <ul id="demoevent" class="collapse dropdown-header-top">
                                     <li><a href="inbox.php">Inbox</a></li>
-                                    <li><a href="view-email.html">View Email</a></li>
+                                    
                                 </ul>
                             </li>
                             <li><a data-toggle="collapse" data-target="#democrou" href="#">LiveCam</a>
                                 <ul id="democrou" class="collapse dropdown-header-top">
-                                    <li><a href="google-map.html">Google Map</a></li>
-                                    <li><a href="data-map.html">Data Maps</a></li>
-                                    <li><a href="wizard.html">Wizard</a></li>
+                                    <li><a href="livecam.php">Live Video</a></li>
+                                    <li><a href="addcam.php">Add Cam</a></li>
                                 </ul>
                             </li>
                             <li><a data-toggle="collapse" data-target="#demolibra" href="#">Projects</a>
                                 <ul id="demolibra" class="collapse dropdown-header-top">
-                                    <li><a href="flot-charts.html">Project Data</a></li>
-                                    <li><a href="bar-charts.html"></a>Upcoming Projects</li>
+                                    <li><a href="project.php">Project Data</a></li>
+                                    <li><a href="comingproject.php">Upcoming Projects</a></li>
                                 </ul>
                             </li>
                             <li><a data-toggle="collapse" data-target="#demodepart" href="#">Database</a>
                                 <ul id="demodepart" class="collapse dropdown-header-top">
-                                    <li><a href="normal-table.html">Normal Table</a></li>
-                                    <li><a href="data-table.html">Data Table</a></li>
+                                    <li><a href="data-table-sub.php">Subscriber Data</a></li>
+                                    <li><a href="data-table-contact.php">Contact Data</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -356,56 +362,52 @@
                 <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
                     <li><a data-toggle="tab" href="#Home"><i class="notika-icon notika-house"></i> Home</a>
                     </li>
-                    <li><a data-toggle="tab" href="#mailbox"><i class="notika-icon notika-mail"></i>Contacts</a>
+                    <li><a data-toggle="tab" href="#mailbox"><i class="notika-icon notika-mail"></i>Contact</a>
                     </li>
                     <li><a data-toggle="tab" href="#livecamp"><i class="fa fa-camera-retro"></i>LiveCam</a>
                     </li>
-                    <li><a data-toggle="tab" href="#Charts"><i class="notika-icon notika-bar-chart"></i>Projects</a>
+                    <li><a data-toggle="tab" href="#project"><i class="notika-icon notika-bar-chart"></i>Projects</a>
                     </li>
                     <li><a data-toggle="tab" href="#Tables"><i class="notika-icon notika-windows"></i>Database</a>
                     </li>
 
                 </ul>
                 <div class="tab-content custom-menu-content">
-                    <div id="Home" class="tab-pane in active notika-tab-menu-bg animated flipInX">
-                        <!-- <ul class="notika-main-menu-dropdown">
+                    <div id="Home" class="tab-pane in notika-tab-menu-bg animated flipInX">
+                        <ul class="notika-main-menu-dropdown">
                             <li><a href="index.php">Dashboard One</a>
                             </li>
                            
-                        </ul> -->
+                        </ul>
                     </div>
                     <div id="mailbox" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
                             <li><a href="inbox.php">Inbox</a>
                             </li>
-                            <li><a href="view-email.html">View Email</a>
-                            </li>
                         </ul>
                     </div>
                     <div id="livecamp" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
-                            <li><a href="google-map.html">Google Map</a>
+                            <li><a href="livecam.php">live video</a>
                             </li>
-                            <li><a href="data-map.html">Data Maps</a>
+                            <li><a href="addcam.php">Add Cam</a>
                             </li>
-                            </li>
-                            <li><a href="wizard.html">Wizard</a>
                             </li>
                         </ul>
                     </div>
-                    <div id="Charts" class="tab-pane notika-tab-menu-bg animated flipInX">
+                    <div id="project" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
-                            <li><a href="flot-charts.html">Project Data</a>
+                            <li><a href="project.php">Project Data</a>
                             </li>
-                            <li><a href="bar-charts.html">Upcoming Projects</a>
+                            <li><a href="comingproject.php">Upcoming Projects</a>
                             </li>
                         </ul>
                     </div>
                     <div id="Tables" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
-                            <li><a href="normal-table.html">Normal Table</a>
+                            <li><a href="data-table-sub.php">Subcribers Data</a>
                             </li>
-                            <li><a href="data-table.html">Data Table</a>
+                            <li><a href="data-table-contact.php">Contacts Data</a>
                             </li>
                         </ul>
                     </div>

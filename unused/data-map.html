@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Modals | Notika - Notika Admin Template</title>
+    <title>Data Map | Notika - Notika Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -33,15 +33,19 @@
     <!-- normalize CSS
 		============================================ -->
     <link rel="stylesheet" href="css/normalize.css">
+	<!-- wave CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/wave/waves.min.css">
+    <link rel="stylesheet" href="css/wave/button.css">
     <!-- mCustomScrollbar CSS
 		============================================ -->
     <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
     <!-- Notika icon CSS
 		============================================ -->
     <link rel="stylesheet" href="css/notika-custom-icon.css">
-    <!-- wave CSS
+    <!-- charts CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/wave/waves.min.css">
+    <link rel="stylesheet" href="css/c3/c3.min.css">
     <!-- main CSS
 		============================================ -->
     <link rel="stylesheet" href="css/main.css">
@@ -244,13 +248,13 @@
                                             </div>
                                             <div class="progress">
                                                 <div class="lead-content">
-                                                    <p>Bootstrap Admin Template</p>
+                                                    <p>Bootstrap Admin</p>
                                                 </div>
                                                 <div class="progress-bar wow fadeInLeft" data-progress="65%" style="width: 65%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>65%</span> </div>
                                             </div>
                                             <div class="progress progress-bt">
                                                 <div class="lead-content">
-                                                    <p>Youtube Client App</p>
+                                                    <p>Youtube App</p>
                                                 </div>
                                                 <div class="progress-bar wow fadeInLeft" data-progress="55%" style="width: 55%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>55%</span> </div>
                                             </div>
@@ -456,7 +460,7 @@
                         </li>
                         <li><a data-toggle="tab" href="#mailbox"><i class="notika-icon notika-mail"></i> Email</a>
                         </li>
-                        <li><a data-toggle="tab" href="#Interface"><i class="notika-icon notika-edit"></i> Interface</a>
+                        <li class="active"><a data-toggle="tab" href="#Interface"><i class="notika-icon notika-edit"></i> Interface</a>
                         </li>
                         <li><a data-toggle="tab" href="#Charts"><i class="notika-icon notika-bar-chart"></i> Charts</a>
                         </li>
@@ -464,7 +468,7 @@
                         </li>
                         <li><a data-toggle="tab" href="#Forms"><i class="notika-icon notika-form"></i> Forms</a>
                         </li>
-                        <li class="active"><a data-toggle="tab" href="#Appviews"><i class="notika-icon notika-app"></i> App views</a>
+                        <li><a data-toggle="tab" href="#Appviews"><i class="notika-icon notika-app"></i> App views</a>
                         </li>
                         <li><a data-toggle="tab" href="#Page"><i class="notika-icon notika-support"></i> Pages</a>
                         </li>
@@ -496,7 +500,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="Interface" class="tab-pane notika-tab-menu-bg animated flipInX">
+                        <div id="Interface" class="tab-pane active notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="animations.html">Animations</a>
                                 </li>
@@ -542,7 +546,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="Appviews" class="tab-pane active notika-tab-menu-bg animated flipInX">
+                        <div id="Appviews" class="tab-pane notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="notification.html">Notifications</a>
                                 </li>
@@ -598,10 +602,10 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<div class="breadcomb-wp">
 									<div class="breadcomb-icon">
-										<i class="notika-icon notika-app"></i>
+										<i class="notika-icon notika-edit"></i>
 									</div>
 									<div class="breadcomb-ctn">
-										<h2>Modals</h2>
+										<h2>Data Maps</h2>
 										<p>Welcome to Notika <span class="bread-ntd">Admin Template</span></p>
 									</div>
 								</div>
@@ -618,316 +622,36 @@
 		</div>
 	</div>
 	<!-- Breadcomb area End-->
-    <!-- Modals area start-->
-    <div class="modals-area">
+    <!-- Google Map area End-->
+    <div class="data-map-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="modals-list">
-                        <div class="modals-hd">
-                            <h2>Modal</h2>
-                            <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
-                        </div>
-                        <div class="modals-single">
-                            <div class="modal-df-hd">
-								<p>A rendered modal with header, body, and set of actions in the footer.</p>
-							</div>
-                            <div class="modals-default-notika">
-                                <div class="modal-inner-pro">
-                                    <h2>Modal title</h2>
-                                    <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                    <div class="modal-ft">
-                                        <button type="button" class="btn btn-modal">Save changes</button>
-                                        <button type="button" class="btn btn-modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="data-map-single">
+                        <div id="basic_map"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="data-map-single sm-res-mg-t-30">
+                        <div id="selected_map"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="modals-list mg-t-30">
-                        <div class="modals-single">
-                            <div class="modals-hd">
-                                <h2>Modals sizes</h2>
-                                <p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modals-default, .modal-sm, .modal-large</code>.</p>
-                            </div>
-                            <div class="modals-default-cl">
-                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalone">Modal Default</button>
-                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModaltwo">Modal Small</button>
-                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalthree">Modal Large</button>
-                                
-                                <div class="modal fade" id="myModalone" role="dialog">
-                                    <div class="modal-dialog modals-default">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="modal fade" id="myModaltwo" role="dialog">
-                                    <div class="modal-dialog modal-sm">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec min odio, faucibus at, scelerisquese quis, convallisdse. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="modal fade" id="myModalthree" role="dialog">
-                                    <div class="modal-dialog modal-large">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="data-map-single mg-t-30">
+                        <div id="usa_map"></div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="modals-list mg-t-30">
-                        <div class="modals-single">
-                            <div class="modals-hd">
-                                <h2>Animation Examples</h2>
-                                <p>Using animation class in modals <a target="_blank" href="https://daneden.github.io/animate.css/">click here</a></p>
-                            </div>
-                            <div class="modals-default-cl">
-                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalfour">bounce</button>
-                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalfive">flash</button>
-                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalsix">rubberBand</button>
-                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalseven">shake</button>
-                                <div class="modal animated bounce" id="myModalfour" role="dialog">
-                                    <div class="modal-dialog modals-default">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal animated flash" id="myModalfive" role="dialog">
-                                    <div class="modal-dialog modals-default">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal animated rubberBand" id="myModalsix" role="dialog">
-                                    <div class="modal-dialog modals-default">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal animated shake" id="myModalseven" role="dialog">
-                                    <div class="modal-dialog modals-default">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="modals-list mg-t-30">
-                        <div class="modals-single">
-                            <div class="modals-hd">
-                                <h2>Optional modals Colors</h2>
-                                <p>Make sure to give the available color in modal's classes to be placed on a <code>.nk-red, .nk-cyan, .nk-indigo</code>.</p>
-                            </div>
-                            <div class="modals-default-cl">
-                                <button type="button" class="btn nk-red btn-info" data-toggle="modal" data-target="#myModalnine">Red</button>
-                                <button type="button" class="btn nk-light-blue btn-info" data-toggle="modal" data-target="#myModalten">Light Blue</button>
-                                <button type="button" class="btn nk-cyan btn-info" data-toggle="modal" data-target="#myModaleleven">Cyan</button>
-                                <button type="button" class="btn nk-deep-purple btn-info" data-toggle="modal" data-target="#myModaltwelve">Deep Purple</button>
-                                <button type="button" class="btn nk-indigo btn-info" data-toggle="modal" data-target="#myModalthirteen">Indigo</button>
-                                <button type="button" class="btn nk-blue btn-info" data-toggle="modal" data-target="#myModalfourteen">Blue</button>
-                                <div class="modal fade" id="myModalnine" role="dialog">
-                                    <div class="modal-dialog modals-default nk-red">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="myModalten" role="dialog">
-                                    <div class="modal-dialog modals-default nk-light-blue">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="myModaleleven" role="dialog">
-                                    <div class="modal-dialog modals-default nk-cyan">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="myModaltwelve" role="dialog">
-                                    <div class="modal-dialog modals-default nk-deep-purple">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="myModalthirteen" role="dialog">
-                                    <div class="modal-dialog modals-default nk-indigo">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="myModalfourteen" role="dialog">
-                                    <div class="modal-dialog modals-default nk-blue">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h2>Modal title</h2>
-                                                <p>Curabitur blandit mollis lacus. Nulla sit amet est. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Cras sagittis.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Save changes</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="data-map-single mg-t-30">
+                        <div id="arc_map"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Modals area End-->
+    <!-- Google Map area End-->
     <!-- Start Footer area-->
     <div class="footer-copyright-area">
         <div class="container">
@@ -985,19 +709,25 @@
     <script src="js/knob/jquery.knob.js"></script>
     <script src="js/knob/jquery.appear.js"></script>
     <script src="js/knob/knob-active.js"></script>
-    <!--  wave JS
-		============================================ -->
-    <script src="js/wave/waves.min.js"></script>
-    <script src="js/wave/wave-active.js"></script>
     <!--  Chat JS
 		============================================ -->
     <script src="js/chat/jquery.chat.js"></script>
     <!--  todo JS
 		============================================ -->
     <script src="js/todo/jquery.todo.js"></script>
+	<!--  wave JS
+		============================================ -->
+    <script src="js/wave/waves.min.js"></script>
+    <script src="js/wave/wave-active.js"></script>
     <!-- plugins JS
 		============================================ -->
     <script src="js/plugins.js"></script>
+    <!-- Data Maps JS
+		============================================ -->
+    <script src="js/data-map/d3.min.js"></script>
+    <script src="js/data-map/topojson.js"></script>
+    <script src="js/data-map/datamaps.all.min.js"></script>
+    <script src="js/data-map/data-maps-active.js"></script>
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
